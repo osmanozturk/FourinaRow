@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="size_seekbar">Boyut:</string>
+    <string name="menu_button">Oyuna Başla</string>
+    <string name="welcome_message">Four in a Row oyununa Hoş Geldiniz,
+    Başlamak için boyut ve oyun modu seçin.</string>
+    <string name="pvp_radiobutton">" İki oyunculu"</string>
+    <string name="cvp_radiobutton">Bilgisayara Karşı</string>
+    <string name="undo_button">Geri Al</string>
+    <string name="current_player_text">Hamle Sırası:</string>
+    <string name="timer">Kalan Süre:</string>
+    <string name="timer_selector">Sınırsız</string>
+    <string name="time_limit">Zaman Sınırı:</string>
+    <string name="time_metric">saniye</string>
+    <string name="thinking">Bilgisayar düşünüyor…</string>
+    <string name="ai_difficulty">Bilgisayar Zorluğu:</string>
+    <string name="very_easy">Çok Hızlı</string>
+    <string name="easy">Hızlı</string>
+    <string name="medium">Yavaş ama Zeki</string>
+    <string name="hard">Fazla Düşünen</string>
+    <string name="draw_game">Oyun Berabere Bitti</string>
+    <string name="player_one_game">Birinci Oyuncu Kazandı</string>
+    <string name="player_two_game">İkinci Oyuncu Kazandı</string>
+    <string name="computer_game">Bilgisayar Kazandı</string>
+    <string name="current_player_one">Hamle Sırası İlk Oyuncuda</string>
+    <string name="current_player_two">Hamle Sırası İkinci Oyuncuda</string>
+    <string name="current_player_computer">Hamle Sırası Bilgisayarda</string>
+</resources>

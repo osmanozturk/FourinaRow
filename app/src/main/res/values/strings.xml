@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name" translatable="false">Four in a Row</string>
+    <string name="size_seekbar">Size:</string>
+    <string name="menu_button">Start Game</string>
+    <string name="welcome_message">Welcome to Four in a Row game,
+    Please select a board size and game mode to play</string>
+
+    <string name="pvp_radiobutton">Player vs Player</string>
+    <string name="cvp_radiobutton">Computer vs Player</string>
+    <string name="undo_button">Undo</string>
+    <string name="current_player_text">Current Player:</string>
+    <string name="timer">Remaining Time:</string>
+    <string name="timer_selector">Infinite</string>
+    <string name="time_limit">Time limit: </string>
+    <string name="time_metric">seconds</string>
+    <string name="thinking">Ai is thinking…</string>
+    <string name="ai_difficulty">AI Difficulty:</string>
+
+
+    <string name="very_easy">Very Fast</string>
+    <string name="easy">Fast</string>
+    <string name="medium">Slower but Clever</string>
+    <string name="hard">Thinks too much</string>
+
+
+    <string name="draw_game">Game Finished Draw</string>
+    <string name="player_one_game">Game Finished Player One Has Won</string>
+    <string name="player_two_game">Game Finished Player Two Has Won</string>
+    <string name="computer_game">Game Finished Player Computer Has Won</string>
+    <string name="current_player_one">Current Player: Player One</string>
+    <string name="current_player_two">Current Player: Player Two</string>
+    <string name="current_player_computer">Current Player: Computer</string>
+
+
+
+</resources>
