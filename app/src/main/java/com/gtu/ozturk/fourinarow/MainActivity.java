@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
     private RadioButton pvp;
     private RadioButton cvp;
     private final int MINSIZE = 5;
-    private final int MAXSIZE = 40;
+    private final int MAXSIZE = 7;
     private final int MAXSECONDS = 61;
     private final int MINSECONDS = 5;
     private final int MINDIFFICULTY = 1;//will multiply by 2 for AI Search Depth
