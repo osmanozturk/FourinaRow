@@ -635,6 +635,12 @@ public class FourinaRow extends SurfaceView implements SurfaceHolder.Callback {
             //Main thread will run with consistent FPS and wait for AI thread to finish calculations
             //For prevent lagging with that construction
             if (!aiThread.isThinking()) {
+                try {
+                    aiThread.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                aiThread = new AIThread(this, AIDepth);
                 aiThread.setThinking(true);
                 aiThread.start();
                 Log.i("TAG", "playGame: Started AI thread");

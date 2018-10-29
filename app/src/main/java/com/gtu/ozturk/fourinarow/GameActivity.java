@@ -5,9 +5,13 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class GameActivity extends Activity {
     private FourinaRow gameView;
-
+    private AdView mAdView;
 
     /**
      * Makes game FullScreen and keeps screen awake
@@ -23,6 +27,9 @@ public class GameActivity extends Activity {
         gameView = (FourinaRow) findViewById(R.id.fourinaRow);
         setContentView(R.layout.activity_game);
 
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
 

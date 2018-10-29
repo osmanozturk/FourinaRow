@@ -13,6 +13,10 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import java.util.Locale;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class MainActivity extends Activity {
     private TextView selectedSize;
     private SeekBar sizeSelector;
@@ -29,6 +33,7 @@ public class MainActivity extends Activity {
     private final int MINDIFFICULTY = 1;//will multiply by 2 for AI Search Depth
     private final int MAXDIFFICULTY = 4;
 
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +42,13 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+        MobileAds.initialize(this,
+                "ca-app-pub-3940256099942544~3347511713");
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         selectedSize = (TextView) findViewById(R.id.boardSizeText);
         sizeSelector = (SeekBar) findViewById(R.id.sizeSeekBar);
